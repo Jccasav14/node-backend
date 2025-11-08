@@ -4,9 +4,8 @@ const userRoutes = require("./routes/userRoutes");
 require("./initDb"); // Inicializa tabla users
 
 const app = express();
-app.use(cors({
-  origin: "https://nuevojam-c3219.web.app/" // reemplaza con tu URL de Firebase
-}));
+app.use(cors());
+
 
 app.use(express.json());
 
